@@ -22,6 +22,7 @@ nav{align-items: center;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -173,10 +174,31 @@ h4{
 @media (max-width:720px) {
     ul{
         width: 240px;
+        
     }
     .vid{
-        width:700px;}
-    video{
-        width:330px}
+        max-width: 700px;
+        flex-direction: column;
+    }
+    
 }
-
+@media (max-width:650px) {
+    .vid{
+        max-width: 600px;
+        align-items: center;
+    }
+    .video{
+        max-width: 550px!important;
+        margin-top: 20px;
+    }
+}
+@media (max-width:550px) {
+    .video{
+        width: 400px;
+    }
+}
+@media (max-width:400px) {
+    .video{
+        width: 350px;
+    }
+}
